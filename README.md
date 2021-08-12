@@ -15,3 +15,7 @@ Python code for Health Management System
 
 ## Further Information
   - Program will create total 6 .txt files(1 for diet, 1 for exercise of each roommate).
+
+## Author
+
+- [@Sarfaraz](https://www.github.com/GoogolDKhan)
