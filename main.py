@@ -25,12 +25,12 @@ try:
         log_num = int(input())
         print(f"Selected Job : {log[log_num]}")
         f = open(roommates[roommate] + "_" + log[log_num] + ".txt", "a")
-        k = 'y'
-        while(k != "n"):
+        add_more = 'y'
+        while(add_more != "n"):
             print(f"Enter {log[log_num]}")
             mytext = input()
             f.write("[ " + str(getdate()) + " ] : " + mytext + "\n")
-            k = input("ADD MORE ? y/n:")
+            add_more = input("ADD MORE ? y/n:")
             continue
         f.close()
 
@@ -40,8 +40,8 @@ try:
         log_num = int(input())
         print(f"{roommates[roommate]}-{log[log_num]} Report :")
         f = open(roommates[roommate] + "_" + log[log_num] + ".txt")
-        contents = f.readlines()
-        for line in contents:
+        content = f.readlines()
+        for line in content:
             print(line, end="")
         f.close()
     else:
