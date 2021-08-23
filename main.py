@@ -1,13 +1,16 @@
+# Creating dictonaries for roommates use
 roommates = {1: "Sarfaraz", 2: "Sashant", 3: "Prabhjot"}
 log = {1: "Exercise", 2: "Diet"}
 
-
+# log current date and time
 def getdate():
     import datetime
     return datetime.datetime.now()
 
 
 try:
+    
+    # Input the selected roommate and his option to log or retrieve
     print("Select your name:")
     for key, value in roommates.items():
         print(f"Press {key} for {value}")
@@ -19,6 +22,7 @@ try:
     print("Press 2 for Retrieve")
     num = int(input())
 
+    # If he wants to log a new diet or exercise in his file
     if num == 1:
         for key, value in log.items():
             print(f"Press {key} to log {value}")
@@ -34,6 +38,7 @@ try:
             continue
         f.close()
 
+    # If he wants to retrieve his logged diet or exercise file
     elif num == 2:
         for key, value in log.items():
             print(f"Press {key} to retrieve {value}")
@@ -46,5 +51,7 @@ try:
         f.close()
     else:
         print("Invalid Input !!!")
+
+        
 except Exception as e:
     print("Wrong Input !!!")
