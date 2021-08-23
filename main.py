@@ -5,11 +5,12 @@ log = {1: "Exercise", 2: "Diet"}
 # log current date and time
 def getdate():
     import datetime
+
     return datetime.datetime.now()
 
 
 try:
-    
+
     # Input the selected roommate and his option to log or retrieve
     print("Select your name:")
     for key, value in roommates.items():
@@ -29,8 +30,8 @@ try:
         log_num = int(input())
         print(f"Selected Job : {log[log_num]}")
         f = open(roommates[roommate] + "_" + log[log_num] + ".txt", "a")
-        add_more = 'y'
-        while(add_more != "n"):
+        add_more = "y"
+        while add_more != "n":
             print(f"Enter {log[log_num]}")
             mytext = input()
             f.write("[ " + str(getdate()) + " ] : " + mytext + "\n")
@@ -52,6 +53,6 @@ try:
     else:
         print("Invalid Input !!!")
 
-        
+
 except Exception as e:
     print("Wrong Input !!!")
