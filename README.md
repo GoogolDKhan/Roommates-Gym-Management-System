@@ -1,4 +1,5 @@
-# A Health Management System
+# A Health Management System [![CodeFactor](https://www.codefactor.io/repository/github/googoldkhan/roommates-gym-management-system/badge)](https://www.codefactor.io/repository/github/googoldkhan/roommates-gym-management-system)
+
 Python code for Health Management System
 
 ## Run
